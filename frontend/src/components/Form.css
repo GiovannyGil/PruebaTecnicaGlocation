@@ -1,0 +1,58 @@
+/* Contenedor del formulario */
+.form-container {
+    max-width: 800px;
+    width: 95%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+/* Labels */
+.form-container label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+/* Inputs, textarea y select */
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+    /* más pequeño para que el error esté pegado */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Campo con error */
+.form-container input.error-input,
+.form-container textarea.error-input,
+.form-container select.error-input {
+    border-color: #e74c3c !important;
+}
+
+/* Mensaje de error */
+.form-container .error {
+    color: #e74c3c;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    /* sin espacio arriba, pero sí abajo */
+}
+
+/* Efecto focus */
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+}

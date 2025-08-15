@@ -1,0 +1,37 @@
+para crear un tarea se puede usar dos opcion
+
+POST -> http://localhost:3000/api/tareas/
+
+{
+  "title": "Tarea 1",
+  "description": "description tarea 1",
+  "due_date": "2025-08-20"
+}
+
+{
+  "title": "Tarea 1",
+  "description": "description",
+  "status": "pendiente",
+  "priority": "2",
+  "due_date": "2025-08-20T10:00:00.000Z"
+}
+
+
+Obtener todas las tareas 
+GET -> http://localhost:3000/api/tareas/
+
+Obtener una tarea por id 
+GET http://localhost:3000/api/tareas/2
+
+Actualizar 
+PUT -> http://localhost:3000/api/tareas/2 <- ID de la tarea a modificar
+{
+  "title": "Tarea 1",
+  "description": "description",
+  "status": "completada", // EN ESTE CASO MODIFIQUE ESTA LINEA
+  "priority": "2",
+  "due_date": "2025-08-20T10:00:00.000Z"
+}
+
+Elimiar
+DELETE -> http://localhost:3000/api/tareas/1 <- ID de la tarea a eliminar
